@@ -7,7 +7,6 @@ class Asteroid(CircleShape):
         super().__init__(x, y, radius)
 
     def draw(self, screen):
-      #says width of 2 so should i override radius??
       pygame.draw.circle(screen, "white", self.position, self.radius)
 
     def update(self, dt):
